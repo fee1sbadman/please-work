@@ -25,7 +25,7 @@ SECRET_KEY = 'ioi7q-4fw+#(i*x&*nao4yn$mgnis175)a74ism%%6b*+03ep-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'smarttests.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'testingsystem.pythonanywhere.com']
 
 
 # Application definition
