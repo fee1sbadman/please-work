@@ -1,11 +1,10 @@
-<div>
-    <h1><a href="/">What the fuck</a></h1>
-</div>
+{%extends "diplom/base.html" %}
 
-{% for post in dis %}
-    <div>
-        <p>Название предмета:{{post.name}}</p>
-      
-        <p>Информация: {{ post.info}}</p>
-    </div>
-{% endfor %}
+{%block content%}
+            {% for post in dis %}
+                <div class='post'>
+                   <h1><a href="{% url 'dis_details' pk=post.pk %}">{{ post.name }}</a></h1>
+                     <p>Информация: {{ post.info}}</p>
+                </div>
+            {% endfor %}
+{%endblock%}

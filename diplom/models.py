@@ -13,6 +13,7 @@ class Discipline(models.Model):
 
 
 class Test(models.Model):
+    discipline = models.ForeignKey(Discipline, default = 1,on_delete=models.CASCADE)
     name = models.CharField(max_length=50)
     info = models.TextField()
 
@@ -22,6 +23,7 @@ class Test(models.Model):
 
 
 class Question(models.Model):
+    test = models.ForeignKey(Test, default = 1, on_delete=models.CASCADE)
     name = models.TextField()
     answer1 = models.TextField()
     answer2 = models.TextField()
