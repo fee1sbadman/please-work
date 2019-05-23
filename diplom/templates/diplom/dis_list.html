@@ -1,10 +1,11 @@
-<html>
-    <head>
-        <title>It's work allready</title>
-    </head>
-    </body>
+<div>
+    <h1><a href="/">What the fuck</a></h1>
+</div>
+
+{% for post in dis %}
     <div>
-    <h1><a href ='/'> Ссылка не работает</a><h1>
-    <div>
-    </body>
-</html>
+        <p>Название предмета:{{post.name}}</p>
+      
+        <p>Информация: {{ post.info}}</p>
+    </div>
+{% endfor %}
