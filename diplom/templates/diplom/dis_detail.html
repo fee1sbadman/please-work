@@ -1,0 +1,15 @@
+{%extends "diplom/base.html" %}
+
+{%block content%}
+                <div class='post'>
+                 <h1>{{ dis.name }}</h1>
+                    <input type='checkbox' id = 'info'>
+                    <label for = 'info'>Информация: {{ dis.info}}</label>
+            {% for t in dis.test_set.all %}
+                <div class='post'>
+                   <h1>{{t.name}}</h1>
+                </div>
+            {% endfor %}
+                </div>
+
+{%endblock%}

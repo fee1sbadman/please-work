@@ -31,5 +31,7 @@ class Question(models.Model):
     answer4 = models.TextField()
     rigth_answer = models.IntegerField()
 
+    count = models.IntegerField(default = 0)
+
     def __str__(self):
         return self.name
